@@ -5253,7 +5253,7 @@ fieldset:disabled .btn {
     transform: var(--bs-accordion-btn-icon-transform)
 }
 
-.accordion-button::after {
+/* .accordion-button::after {
     flex-shrink: 0;
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
@@ -5263,7 +5263,7 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition)
-}
+} */
 
 @media (prefers-reduced-motion:reduce) {
     .accordion-button::after {

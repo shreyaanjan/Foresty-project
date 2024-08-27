@@ -1,0 +1,12 @@
+@media (max-width:992px) {
+    .banner{
+        margin-block-start: 35px;
+    }
+    .achievement-item{
+        border: none !important;
+        padding: 30px;
+    }
+    .form-1{
+        margin-block-start: 30px;
+    }
+}

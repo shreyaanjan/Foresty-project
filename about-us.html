@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- slider css link -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- bootstrap icon css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader-section-starts -->
+    <div class="preloader">
+        <div class="loader d-flex align-items-center justify-content-center">
+            <img src="./assets/images/preloader.svg" alt="loader" class="img-fluid">
+        </div>
+    </div>
+    <!-- loader-section-ends -->
+
+    <!-- header-section-starts -->
+    <header class="header-section">
+        <div class="first-header d-lg-flex d-none">
+            <div class="container">
+                <div class="header-top d-flex align-items-center justify-content-between">
+                    <div class="head-logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <ul class="info d-flex align-items-center m-0">
+                            <li class="border-end">
+                                <i class="fa-solid fa-paper-plane pe-1"></i>
+                                <span class="pe-4">info.company@gmail.com</span>
+                            </li>
+                            <li class="ps-4">
+                                <i class="fa-solid fa-location-dot pe-1"></i>
+                                <span class="pe-4">85 Ketch Harbour RoadBensalem, PA 19020</span>
+                            </li>
+                        </ul>
+                        <ul class="link-icon d-flex align-items-center m-0">
+                            <li class="border-end">
+                                <i class="fa-brands fa-facebook-f pe-3"></i>
+                            </li>
+                            <li class="border-end ps-3">
+                                <i class="fa-brands fa-twitter pe-3"></i>
+                            </li>
+                            <li class="border-end ps-3">
+                                <i class="fa-brands fa-linkedin-in pe-3"></i>
+                            </li>
+                            <li class="ps-3">
+                                <i class="fa-brands fa-youtube pe-3"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-lg-flex d-none">
+                        <div class="side-icon">
+                            <i class="bi bi-list-nested fs-4 text-white" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </div>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel" data-bs-backdrop="static">
+                            <div class="offcanvas-header d-flex align-items-center justify-content-between">
+                                <div class="logo">
+                                    <img src="https://gramentheme.com/html/foresty/assets/images/logo/logo-mix.svg"
+                                        alt="logo-img">
+                                </div>
+                                <div
+                                    class="cancel-icon d-flex align-items-center justify-content-center rounded-circle">
+                                    <i class="bi bi-x fs-4 text-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></i>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body">
+                                <p class="text-white text-capitalize content">
+                                    The foundation of any road is the subgrade, which provides a stable base for the
+                                    road
+                                    layers above. Proper compaction of the subgrade is crucial to prevent settling and
+                                    ensure long-term road stability.
+                                </p>
+                                <ul class="p-0 py-4 mt-65 border-top border-bottom">
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-geo-alt-fill fs-5 icon-color me-3"></i>
+                                        <p class="text-white fs-5 icon-txt m-0">example@example.com</p>
+                                    </li>
+                                    <li class="d-flex align-items-center my-3 call-icon border-0">
+                                        <i class="fa-solid fa-phone-volume icon-color fs-5 me-3"></i>
+                                        <p class="text-white fs-5 icon-txt m-0">+91 2659 302 003</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-paper-plane icon-color fs-5 me-3"></i>
+                                        <p class="text-white fs-5 icon-txt m-0">info.company@gmail.com</p>
+                                    </li>
+                                </ul>
+                                <div class="social-media d-flex gap-3 mt-65">
+                                    <a class="d-flex align-items-center justify-content-center border rounded-circle ">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a class="d-flex align-items-center justify-content-center border rounded-circle ">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a class="d-flex align-items-center justify-content-center border rounded-circle ">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a class="d-flex align-items-center justify-content-center border rounded-circle ">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-responsive">
+                        <img src="./assets/images/logo-light.svg" alt="logo-img" style="max-width: 140px;">
+                    </div>
+                    <ul class="d-flex gap-5 menu m-0 d-lg-flex d-none">
+                        <li>
+                            <a href="./index.html" class="text-white fw-bold">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="text-white fw-bold">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./services.html" class="text-white fw-bold">Services</a>
+                        </li>
+                        <li>
+                            <a href="./blog.html" class="text-white fw-bold">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="text-white fw-bold">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center d-lg-flex d-none">
+                        <div>
+                            <div
+                                class="cancel-icon call-icon d-flex align-items-center justify-content-center border border-white border-2 rounded-circle me-3">
+                                <i class="fa-solid fa-phone-volume text-white"></i>
+                            </div>
+                        </div>
+                        <div class="call-info">
+                            <span class="text-white">Call Any Time</span>
+                            <p class="text-white fw-bold m-0">+91 2659 302 003</p>
+                        </div>
+                    </div>
+                    <div class="menu-icon d-lg-none d-flex">
+                        <i class="bi bi-list fs-2 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section-ends -->
+
+    <!-- responsive-header-section-starts -->
+    <div class="responsive-head">
+        <ul class="p-3">
+            <li class="p-3 border-bottom">
+                <a href="./index.html" class="text-white fw-bold">Home</a>
+            </li>
+            <li class="p-3 border-bottom">
+                <a href="./about-us.html" class="text-white fw-bold">About Us</a>
+            </li>
+            <li class="p-3 border-bottom">
+                <a href="./services.html" class="text-white fw-bold">Services</a>
+            </li>
+            <li class="p-3 border-bottom">
+                <a href="./blog.html" class="text-white fw-bold">Blog</a>
+            </li>
+            <li class="p-3 border-bottom">
+                <a href="./contact-us.html" class="text-white fw-bold">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <!-- responsive-header-section-ends -->
+
+    <!-- page-banner-area-starts -->
+    <section class="page-banner">
+        <div class="container">
+            <h2 class="text-white text-center fs-1 fw-bold">About Us</h2>
+            <div class="breadcrumb-list text-center">
+                <a href="./index.html" class="text-white">Home :</a>
+                <span>About Us</span>
+            </div>
+        </div>
+    </section>
+    <!-- page-banner-area-ends -->
+
+    <!-- about-history-section-starts -->
+    <section class="about-1-sect">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="about-history">
+                        <div class="section-sub-title mb-5">
+                            <h5>
+                                <img src="./assets/images/section-title-leaf.svg" alt="">
+                                <span class="text-uppercase fw-semibold">Our History</span>
+                            </h5>
+                        </div>
+                        <div class="section-title mb-5">
+                            <h2 class="text-capitalize fw-bold fs-1">
+                                History of Our Organization
+                            </h2>
+                        </div>
+                        <h5 class="text-capitalize mb-5">
+                            Elit ullamcorper dignissim cras tincidunt lobortis feugiat vibe
+                        </h5>
+                        <p>It's important to note that tree planting should be carried out thoughtfully, considering
+                            factors such as the
+                            suitability of tree species to the local ecosystem
+                        </p>
+                        <div class="mb-5">
+                            <ul class="p-0 d-flex align-items-center">
+                                <li class="fw-semibold me-5">
+                                    <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
+                                    Mentoring
+                                </li>
+                                <li class="fw-semibold me-5">
+                                    <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
+                                    Donating
+                                </li>
+                                <li class="fw-semibold me-5">
+                                    <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
+                                    Volunteering
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text-capitalize">
+                            Yiuym ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                            accumsan
+                            lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="img">
+                        <img src="./assets/images/about-1.png" alt="img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-history-section-ends -->
+
+    <!-- accordion-section-starts -->
+    <section class="help-sect">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="img">
+                        <img src="./assets/images/help2.png" alt="img" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-sub-title mb-4">
+                        <h5>
+                            <img src="./assets/images/section-title-leaf.svg" alt="">
+                            <span class="text-uppercase fw-semibold">how can you help</span>
+                        </h5>
+                    </div>
+                    <div class="section-title mb-4">
+                        <h2 class="text-capitalize fw-bold fs-1">how can you help</h2>
+                    </div>
+                    <div class="section-content mb-4">
+                        <p class="text-capitalize">
+                            Tree planting is the act of planting young trees, shrubs, or other woody plants into the
+                            ground
+                            to establish new forests or enhance existing ones. It is a crucial component of
+                            environmental
+                            conservation and reforestation efforts aimed.
+                        </p>
+                    </div>
+                    <div class="service-left-item mb-4">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button d-flex justify-content-between fs-4 fw-medium"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">                                        
+                                        Awareness Creation                                        
+                                        <span>
+                                            <i class="bi bi-dash minimize "></i>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-capitalize">
+                                        Tree planting is the act of planting young trees, shrubs, or other woody
+                                        plants into the ground to establish new forests or enhance existing ones. It is
+                                        a crucial component of environmental
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">                                        
+                                        Cleaning Environment                                        
+                                        <span>
+                                            <i class="bi bi-plus maximize "></i>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Tree planting is the act of planting young trees, shrubs, or other woody
+                                        plants into the ground to establish new forests or enhance existing ones. It is
+                                        a crucial component of environmental
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">                                        
+                                        Environmental Education                                        
+                                        <span>
+                                            <i class="bi bi-plus maximize "></i>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Tree planting is the act of planting young trees, shrubs, or other woody
+                                        plants into the ground to establish new forests or enhance existing ones. It is
+                                        a crucial component of environmental
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">                                        
+                                        Eco Development                                        
+                                        <span>
+                                            <i class="bi bi-plus maximize "></i>
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Tree planting is the act of planting young trees, shrubs, or other woody
+                                        plants into the ground to establish new forests or enhance existing ones. It is
+                                        a crucial component of environmental
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="banner-btn fw-semibold d-flex align-items-center gap-2 text-nowrap">
+                            Join with Us
+                            <i class="fa-solid fa-angles-right d-flex align-items-center"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordion-section-ends -->
+
+    <!-- testimonial-section-starts -->
+    <section class="testimony-sect">
+        <div class="container">
+            <div class="section-sub-title mb-4">
+                <h5>
+                    <img src="./assets/images/section-title-leaf.svg" alt="">
+                    <span class="text-uppercase fw-semibold">our client’s feedback</span>
+                </h5>
+            </div>
+            <div class="section-title pb-5">
+                <h2 class="text-capitalize fw-bold fs-1">foresty loves people</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-item bg-white">
+                            <div
+                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                <div class="testimonial-head">
+                                    <div class="testimony-info d-flex align-items-center">
+                                        <div class="testimony-img me-3">
+                                            <img src="./assets/images/testimony-img.png" alt="person-img">
+                                        </div>
+                                        <div class="testimony-name">
+                                            <h3 class="fw-semibold">Kenneth S. Fisher</h3>
+                                            <span class="fw-semibold">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </div>
+                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                    porttitor, convallis erat sit amet,
+                                    facilisis velit. Nulla ornare convallis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item bg-white">
+                            <div
+                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                <div class="testimonial-head">
+                                    <div class="testimony-info d-flex align-items-center">
+                                        <div class="testimony-img me-3">
+                                            <img src="./assets/images/testimony-img-2.png" alt="person-img">
+                                        </div>
+                                        <div class="testimony-name">
+                                            <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
+                                            <span class="fw-semibold">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </div>
+                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                    porttitor, convallis erat sit amet,
+                                    facilisis velit. Nulla ornare convallis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item bg-white">
+                            <div
+                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                <div class="testimonial-head">
+                                    <div class="testimony-info d-flex align-items-center">
+                                        <div class="testimony-img me-3">
+                                            <img src="./assets/images/testimony-img.png" alt="person-img">
+                                        </div>
+                                        <div class="testimony-name">
+                                            <h3 class="fw-semibold">Kenneth S. Fisher</h3>
+                                            <span class="fw-semibold">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </div>
+                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                    porttitor, convallis erat sit amet,
+                                    facilisis velit. Nulla ornare convallis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item bg-white">
+                            <div
+                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                <div class="testimonial-head">
+                                    <div class="testimony-info d-flex align-items-center">
+                                        <div class="testimony-img me-3">
+                                            <img src="./assets/images/testimony-img-2.png" alt="person-img">
+                                        </div>
+                                        <div class="testimony-name">
+                                            <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
+                                            <span class="fw-semibold">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </div>
+                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                    porttitor, convallis erat sit amet,
+                                    facilisis velit. Nulla ornare convallis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial-section-ends -->
+
+    <!-- our-info-section-starts -->
+    <section class="our-info">
+        <div class="container">
+            <div class="row g-4 align-items-center ">
+                <div class="col-lg-3 col-12">
+                    <div class="info-logo text-center">
+                        <img src="./assets/images/logo-light.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <div class="info-ip position-relative">
+                        <input type="text" placeholder="Your Email Address" class="ip-tag border-0">
+                        <i class="fa-regular fa-envelope mail position-absolute fs-3"></i>
+                        <i class="fa-solid fa-paper-plane msg-send fs-4 position-absolute"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-social ps-5 d-flex align-items-center gap-3 justify-content-center">
+                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle ">
+                            <i class="fa-brands fa-facebook-f fs-4"></i>
+                        </div>
+                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-brands fa-twitter fs-4"></i>
+                        </div>
+                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-brands fa-linkedin-in fs-4"></i>
+                        </div>
+                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-brands fa-youtube fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our-info-section-ends -->
+
+    <!-- footer-section-starts -->
+    <footer class="footer-sect">
+        <div class="container">
+            <div class="footer-sect-1">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-item">
+                            <div class="footer-title">
+                                <h4 class="fw-semibold">About Foresty</h4>
+                                <span class="footer-line d-flex"></span>
+                            </div>
+                            <p class="mt-5 mt-sm-4 mb-4 text-capitalize">Tree planting is the act of planting young trees, shrubs, or other woody plants into the ground to establish new</p>
+                            <div class="d-flex">
+                                <h5 class="fw-bold me-2">View Map</h5>
+                                <i class="fa-solid fa-location-arrow foot-icon"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-item">
+                            <div class="footer-title mt-4 mt-md-0">
+                                <h4 class="fw-semibold">Get In Touch!</h4>
+                                <span class="footer-line d-flex"></span>
+                            </div>
+                            <ul class="mt-5 m-0 p-0 my-sm-4">
+                                <li class="pb-3">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot pe-2 foot-icon"></i>
+                                        <span>
+                                            901 N Pitt Str., Suite 170
+                                            Alexandria, <br>
+                                            USA
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="pb-3">
+                                    <div class="call-icon">
+                                        <i class="fa-solid fa-phone-volume pe-2 foot-icon"></i>
+                                        <span>                                            
+                                        (406) 555-0120                                    
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa-solid fa-envelope pe-2 foot-icon"></i>
+                                        <span>                                        
+                                            info@extrem.com                                    
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-item">
+                            <div class="footer-title mt-4 mt-md-0">
+                                <h4 class="fw-semibold">Quick Link</h4>
+                                <span class="footer-line d-flex"></span>
+                            </div>
+                            <ul class="mt-3 p-0">
+                                <li class="pb-2">
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
+                                    <span> Water Conservation</span>
+                                </li>
+                                <li class="pb-2">
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
+                                    <span> Eco System</span>
+                                </li>
+                                <li class="pb-2">
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
+                                    <span> Plastic Recycleing</span>
+                                </li>
+                                <li class="pb-2">
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
+                                    <span> Urban planning</span>
+                                </li>
+                                <li class="pb-2">
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
+                                    <span> Save Green House</span>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-item mt-4 mt-md-0">
+                            <div class="footer-title ">
+                                <h4 class="fw-semibold">Recent News</h4>
+                                <span class="footer-line d-flex"></span>
+                            </div>
+                            <ul class="mt-3 p-0">
+                                <li class="d-flex pb-3">
+                                    <img src="./assets/images/footer-1.png" alt="img">
+                                    <div class="ms-2">
+                                        <h4 class="fs-5 fw-semibold">Close up picture of the sapling</h4>
+                                        <span class="fw-medium time">2 weeks ago</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="./assets/images/footer-2.png" alt="img">
+                                    <div class="ms-2">
+                                        <h4 class="fs-5 fw-semibold">Close up picture of the sapling</h4>
+                                        <span class="fw-medium time">2 weeks ago</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-section-ends -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script>
+        $(window).on('load', function (){
+            $(".preloader").delay(1000).fadeOut();
+        })
+        $(".accordion-header").on('click', function () {
+            $(this).find(".maximize").toggleClass("bi-plus bi-dash")
+        })
+        $(".accordion-header").on('click', function () {
+            $(this).find(".minimize").toggleClass("bi-plus bi-dash")
+        })
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                autoplay: true,
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+        $(".bi-list").on('click', function () {
+            $(".responsive-head").fadeToggle()
+        })
+        $(".bi-list").on('click', function () {
+            $(this).toggleClass("bi-x bi-list")
+        });
+    </script>
+</body>
+
+</html>

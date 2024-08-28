@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- video liht css link -->
+    <link rel="stylesheet" href="./assets/css/videolightbox.css">
     <!-- slider css link -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- bootstrap icon css link -->
@@ -17,7 +19,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="">
+    <!-- loader-section-starts -->
+    <div class="preloader">
+        <div class="loader d-flex align-items-center justify-content-center">
+            <img src="./assets/images/preloader.svg" alt="loader" class="img-fluid">
+        </div>
+    </div>
+    <!-- loader-section-ends -->
+
     <!-- header-section-starts -->
     <header class="header-section">
         <div class="first-header d-lg-flex d-none">
@@ -177,690 +187,715 @@
     </div>
     <!-- responsive-header-section-ends -->
 
-    <!-- banner-section-starts -->
-    <section class="banner-sect">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-xl-4">
-                    <div class="banner-img">
-                        <div class="banner-txt-img">
-                            <img src="./assets/images/text.png" alt="" class="mt-5 img-fluid ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8">
-                    <div class="banner">
-                        <h4 class="banner-subtitle fw-medium fs-5 mb-4">Embrace the Green, Sow the Future</h4>
-                        <h1 class="banner-title fw-bold mb-5">We Are Here to Increase Your modern life With
-                            <span>Planting</span>
-                        </h1>
-                        <div class="d-flex gap-5 align-items-center mb-5">
-                            <button class="banner-btn fw-semibold d-flex align-items-center gap-2 text-nowrap">
-                                Discover with Us
-                                <i class="fa-solid fa-angles-right d-flex align-items-center"></i>
-                            </button>
-                            <div class="arrow-img">
-                                <img src="./assets/images/arrow-long.png" alt="">
-                            </div>
-                            <p class="banner-desc text-capitalize">
-                                Ecology is the scientific study of the relationships between organisms &
-                                their environment, including their physical, chemical
-                            </p>
-                        </div>
-                    </div>
-                    <div class="two-img d-flex justify-content-end position-relative">
-                        <div class="banner-leaf">
-                            <img src="./assets/images/leaf.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="hand-soil position-relative d-flex mt-30 ">
-                            <img src="./assets/images/hand-soil.png" alt="" class="img-fluid ">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner-section-ends -->
-
-    <!-- about-us-section-starts -->
-    <section class="about-us-sect position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="section-sub-title mb-4">
-                        <h5>
-                            <img src="./assets/images/section-title-leaf.svg" alt="">
-                            <span class="text-uppercase fw-semibold">About Us</span>
-                        </h5>
-                    </div>
-                    <div class="section-title mb-4">
-                        <h2 class="text-capitalize fw-bold fs-1">The true supporter of eco-friendliness</h2>
-                    </div>
-                    <div class="section-content">
-                        <p class="text-capitalize">
-                            Tree planting is the act of planting young trees, shrubs, or other woody plants into the
-                            ground
-                            to establish new forests or enhance existing ones. It is a crucial component of
-                            environmental
-                            conservation and reforestation efforts aimed
-                        </p>
-                    </div>
-                    <div class="about-info d-flex ">
-                        <div class="about-details d-flex align-items-center border-end pe-5">
-                            <div class="about-img me-2">
-                                <img src="./assets/images/about-info.png" alt="">
-                            </div>
-                            <div class="about-name">
-                                <h4 class="fw-semibold">Robert Joe Kerry</h4>
-                                <span>Founder</span>
+    <main>
+        <!-- banner-section-starts -->
+        <section class="banner-sect">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-4">
+                        <div class="banner-img">
+                            <div class="banner-txt-img">
+                                <img src="./assets/images/text.png" alt="" class="mt-5 img-fluid ">
                             </div>
                         </div>
-                        <div class="about-sign ps-5">
-                            <img src="./assets/images/about-sign.png" alt="">
-                        </div>
                     </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="about-leaf position-absolute">
-                        <img src="./assets/images/about-leaf.png" alt="" class="float-end">
-                    </div>
-                    <div class="experience-progress-wrapper pt-5 ps-5">
-                        <div class="experience-progress pb-4">
-                            <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
-                                <h5 class="experience-title fw-bold">Carbon Offsetting</h5>
-                                <span class="value fw-bold">80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 80%">
+                    <div class="col-xl-8">
+                        <div class="banner">
+                            <h4 class="banner-subtitle fw-medium fs-5 mb-4">Embrace the Green, Sow the Future</h4>
+                            <h1 class="banner-title fw-bold mb-5">We Are Here to Increase Your modern life With
+                                <span>Planting</span>
+                            </h1>
+                            <div class="d-flex gap-5 align-items-center mb-5 flex-wrap">
+                                <button class="banner-btn fw-semibold d-flex align-items-center gap-2 text-nowrap">
+                                    Discover with Us
+                                    <i class="fa-solid fa-angles-right d-flex align-items-center"></i>
+                                </button>
+                                <div class="arrow-img">
+                                    <img src="./assets/images/arrow-long.png" alt="">
                                 </div>
+                                <p class="banner-desc text-capitalize ">
+                                    Ecology is the scientific study of the relationships between organisms &
+                                    their environment, including their physical, chemical
+                                </p>
                             </div>
                         </div>
-                        <div class="experience-progress pb-4">
-                            <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
-                                <h5 class="experience-title fw-bold">Water Conservation</h5>
-                                <span class="value fw-bold">90%</span>
+                        <div class="two-img d-flex justify-content-end position-relative">
+                            <div class="banner-leaf">
+                                <img src="./assets/images/leaf.png" alt="" class="img-fluid">
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="experience-progress pb-4">
-                            <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
-                                <h5 class="experience-title fw-bold">E-Waste Recycling</h5>
-                                <span class="value fw-bold">70%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 70%">
-                                </div>
+                            <div class="hand-soil position-relative d-flex mt-30 ">
+                                <img src="./assets/images/hand-soil.png" alt="" class="img-fluid ">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- about-us-section-ends -->
+        </section>
+        <!-- banner-section-ends -->
 
-    <!-- video-section-starts -->
-    <section class="video-sect">
-        <div class="container">
-            <div class="video-text d-flex justify-content-center align-items-center">
-                <h2>FORESTY</h2>
-            </div>
-        </div>
-    </section>
-    <!-- video-section-ends -->
-
-    <!-- work-area-section-starts -->
-    <section class="work-sect">
-        <div class="container">
-            <div class="row g-5">
-                <div class="d-flex flex-wrap">
-                    <div class="col-lg-6">
+        <!-- about-us-section-starts -->
+        <section class="about-us-sect position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
                         <div class="section-sub-title mb-4">
                             <h5>
                                 <img src="./assets/images/section-title-leaf.svg" alt="">
-                                <span class="text-uppercase fw-semibold">How We Work</span>
+                                <span class="text-uppercase fw-semibold">About Us</span>
                             </h5>
                         </div>
-                        <div class="section-title">
-                            <h2 class="text-capitalize fw-bold fs-1">We work together for bettering tomorrow</h2>
+                        <div class="section-title mb-4">
+                            <h2 class="text-capitalize fw-bold fs-1">The true supporter of eco-friendliness</h2>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
                         <div class="section-content">
-                            <p class="text-capitalize m-0 mt-3">
-                                we are an organization engaged in "Tree Planting" activities, therefore you can "Donate
-                                Trees. We also join in "Community Forestry | Reforestation" to keep the earth together
-                                so that it remains sustainable.
+                            <p class="text-capitalize">
+                                Tree planting is the act of planting young trees, shrubs, or other woody plants into the
+                                ground
+                                to establish new forests or enhance existing ones. It is a crucial component of
+                                environmental
+                                conservation and reforestation efforts aimed
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row gy-4 mt-3">
-                <div class="col-xl-4 col-xxl-3 col-12">
-                    <div class="work-item position-relative">
-                        <div class="work-item-icon d-flex justify-content-between align-items-center">
-                            <img src="./assets/images/work1.svg" alt="work-1">
-                            <span class="number">01</span>
-                        </div>
-                        <h3 class="fw-medium">Community Forestry</h3>
-                        <p class="mt-4 text-capitalize">
-                            We maintain a busy network of forestry and social development staff along with local
-                            facilitators in the areas we work.
-                        </p>
-                        <div class="arrow position-relative pb-4 mb-3">
-                            <div class="position-absolute know-more">
-                                <span class="fw-bold">Know More</span>
-                                <i class="fa-solid fa-arrow-right fs-5"></i>
+                        <div class="about-info d-flex ">
+                            <div class="about-details d-flex align-items-center border-end pe-5">
+                                <div class="about-img me-2">
+                                    <img src="./assets/images/about-info.png" alt="men-img" class="img-fluid">
+                                </div>
+                                <div class="about-name">
+                                    <h4 class="fw-semibold">Robert Joe Kerry</h4>
+                                    <span>Founder</span>
+                                </div>
+                            </div>
+                            <div class="about-sign ps-5">
+                                <img src="./assets/images/about-sign.png" alt="sign" class="img-fluid">
                             </div>
                         </div>
-                        <div class="work-item-leaf position-absolute">
-                            <img src="./assets/images/work-leaf.png" alt="">
-                        </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-12">
-                    <div class="work-item position-relative">
-                        <div class="work-item-icon d-flex justify-content-between align-items-center">
-                            <img src="./assets/images/work2.svg" alt="work-2">
-                            <span class="number">02</span>
+                    <div class="col-xl-6">
+                        <div class="about-leaf position-absolute">
+                            <img src="./assets/images/about-leaf.png" alt="" class="float-end">
                         </div>
-                        <h3 class="fw-medium">Individuals</h3>
-                        <p class="mt-4 text-capitalize">
-                            We maintain a busy network of forestry and social development staff along with local
-                            facilitators in the areas we work.
-                        </p>
-                        <div class="arrow position-relative pb-4 mb-3">
-                            <div class="position-absolute know-more">
-                                <span class="fw-bold">Know More</span>
-                                <i class="fa-solid fa-arrow-right fs-5"></i>
+                        <div class="experience-progress-wrapper pt-5 ps-5">
+                            <div class="experience-progress pb-4">
+                                <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
+                                    <h5 class="experience-title fw-bold">Carbon Offsetting</h5>
+                                    <span class="value fw-bold">80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 80%">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="work-item-leaf position-absolute">
-                            <img src="./assets/images/work-leaf.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-12">
-                    <div class="work-item position-relative">
-                        <div class="work-item-icon d-flex justify-content-between align-items-center">
-                            <img src="./assets/images/work3.svg" alt="work-3">
-                            <span class="number">03</span>
-                        </div>
-                        <h3 class="fw-medium">Companies</h3>
-                        <p class="mt-4 text-capitalize">
-                            We maintain a busy network of forestry and social development staff along with local
-                            facilitators in the areas we work.
-                        </p>
-                        <div class="arrow position-relative pb-4 mb-3">
-                            <div class="position-absolute know-more">
-                                <span class="fw-bold">Know More</span>
-                                <i class="fa-solid fa-arrow-right fs-5"></i>
+                            <div class="experience-progress pb-4">
+                                <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
+                                    <h5 class="experience-title fw-bold">Water Conservation</h5>
+                                    <span class="value fw-bold">90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 90%">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="work-item-leaf position-absolute">
-                            <img src="./assets/images/work-leaf.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-3 col-12">
-                    <div class="work-item position-relative">
-                        <div class="work-item-icon d-flex justify-content-between align-items-center">
-                            <img src="./assets/images/work4.svg" alt="work-4">
-                            <span class="number">04</span>
-                        </div>
-                        <h3 class="fw-medium">Education</h3>
-                        <p class="mt-4 text-capitalize">
-                            We maintain a busy network of forestry and social development staff along with local
-                            facilitators in the areas we work.
-                        </p>
-                        <div class="arrow position-relative pb-4 mb-3">
-                            <div class="position-absolute know-more">
-                                <span class="fw-bold">Know More</span>
-                                <i class="fa-solid fa-arrow-right fs-5"></i>
+                            <div class="experience-progress pb-4">
+                                <div class="experience-title-wrapper d-flex align-items-center justify-content-between">
+                                    <h5 class="experience-title fw-bold">E-Waste Recycling</h5>
+                                    <span class="value fw-bold">70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 70%">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="work-item-leaf position-absolute">
-                            <img src="./assets/images/work-leaf.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- work-area-section-ends -->
+        </section>
+        <!-- about-us-section-ends -->
 
-    <!-- service-section-starts -->
-    <section class="service-sect">
-        <div class="container">
-            <div class="section-sub-title mb-4">
-                <h5 class="text-center">
-                    <img src="./assets/images/section-title-leaf.svg" alt="">
-                    <span class="text-uppercase fw-semibold">Our Services</span>
-                </h5>
-            </div>
-        </div>
-        <div class="marquee-wrapper position-relative">
-            <div class="marquee-inner to-left position-absolute d-inline-flex">
-                <ul class="marquee-list">
-                    <li class="marquee-item fs-1 text-uppercase fw-bold">
-                        Our Services
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        <span class="stroke-text">what we do</span>
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        Our Services
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        <span class="stroke-text">what we do</span>
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        Our Services
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        <span class="stroke-text">what we do</span>
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        Our Services
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        <span class="stroke-text">what we do</span>
-                        Our Services
-                        <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
-                        <span class="stroke-text">what we do</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="service-left-item">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item mb-5">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button d-flex justify-content-between fs-4 fw-medium"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Carbon Offsetting
-                                        <span>
-                                            <i class="bi bi-dash minimize"></i>
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-capitalize">
-                                        Tree planting is the act of planting young trees, shrubs, or other woody
-                                        plants into the ground to establish new forests or enhance existing ones. It is
-                                        a crucial component of environmental
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-5">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        E-Waste Recycling
-                                        <span>
-                                            <i class="bi bi-plus maximize"></i>
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Tree planting is the act of planting young trees, shrubs, or other woody
-                                        plants into the ground to establish new forests or enhance existing ones. It is
-                                        a crucial component of environmental
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-5">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Water Conservation
-                                        <span>
-                                            <i class="bi bi-plus maximize"></i>
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Tree planting is the act of planting young trees, shrubs, or other woody
-                                        plants into the ground to establish new forests or enhance existing ones. It is
-                                        a crucial component of environmental
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-5">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        Community Foresty
-                                        <span>
-                                            <i class="bi bi-plus maximize"></i>
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Tree planting is the act of planting young trees, shrubs, or other woody
-                                        plants into the ground to establish new forests or enhance existing ones. It is
-                                        a crucial component of environmental
-                                    </div>
-                                </div>
-                            </div>
+        <!-- video-section-starts -->
+        <section class="video-sect position-relative">
+            <div class="container">
+                <div class="video-text d-flex justify-content-center align-items-center position-relative">
+                    <h2>FORESTY</h2>
+                    <button id="button"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <div id="lightbox">
+                        <i id="close-btn" class="fa-solid fa-xmark z-3"></i>
+                        <div id="video-wrapper">
+                            <iframe id="video" width="960" height="540" src="https://www.youtube.com/embed/lJfqK9bgIng"
+                                frameborder="0" allowfullscreen></iframe>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="image">
-                        <img src="./assets/images/accordion-img.jpg" alt="people-cleaning" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- service-section-ends -->
-
-    <!-- achievement-section-starts -->
-    <section class="achievement-sect">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="achievement-item border-end">
-                        <h2 class="text-white py-3 m-0 text-capitalize fs-1 fw-bold">Our trees have been monitored</h2>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="achievement-item text-center border-end">
-                        <img src="./assets/images/achieve1.png" alt="hand+tree" class="p-2">
-                        <h5 class="text-capitalize text-white">trees planted</h5>
-                        <span class="count fw-bold">6,472,068</span>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="achievement-item text-center border-end">
-                        <img src="./assets/images/achieve2.png" alt="hand" class="p-2">
-                        <h5 class="text-capitalize text-white">Families helped</h5>
-                        <span class="count fw-bold">38,768</span>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="achievement-item text-center">
-                        <img src="./assets/images/achieve3.png" alt="earth" class="p-2">
-                        <h5 class="text-capitalize text-white">CO2 captured (tonne)</h5>
-                        <span class="count fw-bold">1,193,210</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- achievement-section-ends -->
-
-    <!-- involve-section-starts -->
-    <section class="involve-sect position-relative">
-        <div class="involve-leaf position-absolute">
-            <img src="./assets/images/involve-leaf-1.png" alt="leaf">
-        </div>
-        <div class="involve-leaf-2 position-absolute">
-            <img src="./assets/images/leaf-theme2.png" alt="leaf">
-        </div>
-        <div class="container">
-            <div class="involve-bg">
-                <div class="involve-team text-center">
-                    <div class="section-sub-title mb-4">
-                        <h5>
-                            <img src="./assets/images/section-title-leaf.svg" alt="">
-                            <span class="text-uppercase fw-semibold">get involved now</span>
-                        </h5>
-                    </div>
-                    <div class="section-title pb-5">
-                        <h2 class="text-capitalize fw-bold fs-1 text-white">We Have The Power Today To
-                            Change Tomorrow</h2>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button class="involve-btn text-white d-flex align-items-center gap-2">
-                            Join With Us
-                            <i class="fa-solid fa-angles-right d-flex align-items-center"></i>
+                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                            title="Tooltip on bottom">
+                            Tooltip on bottom
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- involve-section-ends -->
+        </section>
+        <!-- video-section-ends -->
 
-    <!-- testimonial-section-starts -->
-    <section class="testimony-sect">
-        <div class="container">
-            <div class="section-sub-title mb-4">
-                <h5>
-                    <img src="./assets/images/section-title-leaf.svg" alt="">
-                    <span class="text-uppercase fw-semibold">our client’s feedback</span>
-                </h5>
-            </div>
-            <div class="section-title pb-5">
-                <h2 class="text-capitalize fw-bold fs-1">foresty loves people</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-item bg-white">
-                            <div
-                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
-                                <div class="testimonial-head">
-                                    <div class="testimony-info d-flex align-items-center">
-                                        <div class="testimony-img me-3">
-                                            <img src="./assets/images/testimony-img.png" alt="person-img">
-                                        </div>
-                                        <div class="testimony-name">
-                                            <h3 class="fw-semibold">Kenneth S. Fisher</h3>
-                                            <span class="fw-semibold">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-quote-right fs-1"></i>
+        <!-- work-area-section-starts -->
+        <section class="work-sect">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-6">
+                            <div class="section-sub-title mb-4">
+                                <h5>
+                                    <img src="./assets/images/section-title-leaf.svg" alt="">
+                                    <span class="text-uppercase fw-semibold">How We Work</span>
+                                </h5>
                             </div>
-                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
-                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
-                                    porttitor, convallis erat sit amet,
-                                    facilisis velit. Nulla ornare convallis
-                                </p>
+                            <div class="section-title">
+                                <h2 class="text-capitalize fw-bold fs-1">We work together for bettering tomorrow</h2>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-item bg-white">
-                            <div
-                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
-                                <div class="testimonial-head">
-                                    <div class="testimony-info d-flex align-items-center">
-                                        <div class="testimony-img me-3">
-                                            <img src="./assets/images/testimony-img-2.png" alt="person-img">
-                                        </div>
-                                        <div class="testimony-name">
-                                            <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
-                                            <span class="fw-semibold">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-quote-right fs-1"></i>
-                            </div>
-                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
-                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
-                                    porttitor, convallis erat sit amet,
-                                    facilisis velit. Nulla ornare convallis
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-item bg-white">
-                            <div
-                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
-                                <div class="testimonial-head">
-                                    <div class="testimony-info d-flex align-items-center">
-                                        <div class="testimony-img me-3">
-                                            <img src="./assets/images/testimony-img.png" alt="person-img">
-                                        </div>
-                                        <div class="testimony-name">
-                                            <h3 class="fw-semibold">Kenneth S. Fisher</h3>
-                                            <span class="fw-semibold">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-quote-right fs-1"></i>
-                            </div>
-                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
-                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
-                                    porttitor, convallis erat sit amet,
-                                    facilisis velit. Nulla ornare convallis
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-item bg-white">
-                            <div
-                                class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
-                                <div class="testimonial-head">
-                                    <div class="testimony-info d-flex align-items-center">
-                                        <div class="testimony-img me-3">
-                                            <img src="./assets/images/testimony-img-2.png" alt="person-img">
-                                        </div>
-                                        <div class="testimony-name">
-                                            <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
-                                            <span class="fw-semibold">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-quote-right fs-1"></i>
-                            </div>
-                            <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
-                                <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
-                                    porttitor, convallis erat sit amet,
-                                    facilisis velit. Nulla ornare convallis
+                        <div class="col-lg-6">
+                            <div class="section-content">
+                                <p class="text-capitalize m-0 mt-3">
+                                    we are an organization engaged in "Tree Planting" activities, therefore you can
+                                    "Donate
+                                    Trees. We also join in "Community Forestry | Reforestation" to keep the earth
+                                    together
+                                    so that it remains sustainable.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
-    </section>
-    <!-- testimonial-section-ends -->
+            <div class="container">
+                <div class="row gy-4 mt-3">
+                    <div class="col-xl-4 col-xxl-3 col-12">
+                        <div class="work-item position-relative">
+                            <div class="work-item-icon d-flex justify-content-between align-items-center">
+                                <img src="./assets/images/work1.svg" alt="work-1">
+                                <span class="number">01</span>
+                            </div>
+                            <h3 class="fw-medium">Community Forestry</h3>
+                            <p class="mt-4 text-capitalize">
+                                We maintain a busy network of forestry and social development staff along with local
+                                facilitators in the areas we work.
+                            </p>
+                            <div class="arrow position-relative pb-4 mb-3">
+                                <div class="position-absolute know-more">
+                                    <span class="fw-bold">Know More</span>
+                                    <i class="fa-solid fa-arrow-right fs-5"></i>
+                                </div>
+                            </div>
+                            <div class="work-item-leaf position-absolute">
+                                <img src="./assets/images/work-leaf.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-3 col-12">
+                        <div class="work-item position-relative">
+                            <div class="work-item-icon d-flex justify-content-between align-items-center">
+                                <img src="./assets/images/work2.svg" alt="work-2">
+                                <span class="number">02</span>
+                            </div>
+                            <h3 class="fw-medium">Individuals</h3>
+                            <p class="mt-4 text-capitalize">
+                                We maintain a busy network of forestry and social development staff along with local
+                                facilitators in the areas we work.
+                            </p>
+                            <div class="arrow position-relative pb-4 mb-3">
+                                <div class="position-absolute know-more">
+                                    <span class="fw-bold">Know More</span>
+                                    <i class="fa-solid fa-arrow-right fs-5"></i>
+                                </div>
+                            </div>
+                            <div class="work-item-leaf position-absolute">
+                                <img src="./assets/images/work-leaf.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-3 col-12">
+                        <div class="work-item position-relative">
+                            <div class="work-item-icon d-flex justify-content-between align-items-center">
+                                <img src="./assets/images/work3.svg" alt="work-3">
+                                <span class="number">03</span>
+                            </div>
+                            <h3 class="fw-medium">Companies</h3>
+                            <p class="mt-4 text-capitalize">
+                                We maintain a busy network of forestry and social development staff along with local
+                                facilitators in the areas we work.
+                            </p>
+                            <div class="arrow position-relative pb-4 mb-3">
+                                <div class="position-absolute know-more">
+                                    <span class="fw-bold">Know More</span>
+                                    <i class="fa-solid fa-arrow-right fs-5"></i>
+                                </div>
+                            </div>
+                            <div class="work-item-leaf position-absolute">
+                                <img src="./assets/images/work-leaf.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-3 col-12">
+                        <div class="work-item position-relative">
+                            <div class="work-item-icon d-flex justify-content-between align-items-center">
+                                <img src="./assets/images/work4.svg" alt="work-4">
+                                <span class="number">04</span>
+                            </div>
+                            <h3 class="fw-medium">Education</h3>
+                            <p class="mt-4 text-capitalize">
+                                We maintain a busy network of forestry and social development staff along with local
+                                facilitators in the areas we work.
+                            </p>
+                            <div class="arrow position-relative pb-4 mb-3">
+                                <div class="position-absolute know-more">
+                                    <span class="fw-bold">Know More</span>
+                                    <i class="fa-solid fa-arrow-right fs-5"></i>
+                                </div>
+                            </div>
+                            <div class="work-item-leaf position-absolute">
+                                <img src="./assets/images/work-leaf.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work-area-section-ends -->
 
-    <!-- team-members-section-starts -->
-    <section class="team-sect pt-5">
-        <div class="container">
-            <div class="text-center">
+        <!-- service-section-starts -->
+        <section class="service-sect">
+            <div class="container">
+                <div class="section-sub-title mb-4">
+                    <h5 class="text-center">
+                        <img src="./assets/images/section-title-leaf.svg" alt="">
+                        <span class="text-uppercase fw-semibold">Our Services</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="marquee-wrapper position-relative">
+                <div class="marquee-inner to-left position-absolute d-inline-flex">
+                    <ul class="marquee-list">
+                        <li class="marquee-item fs-1 text-uppercase fw-bold">
+                            Our Services
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            <span class="stroke-text">what we do</span>
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            Our Services
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            <span class="stroke-text">what we do</span>
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            Our Services
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            <span class="stroke-text">what we do</span>
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            Our Services
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            <span class="stroke-text">what we do</span>
+                            Our Services
+                            <img src="./assets/images/text-slider-leaf.svg" alt="leaf">
+                            <span class="stroke-text">what we do</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="service-left-item">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item mb-5">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button d-flex justify-content-between fs-4 fw-medium"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Carbon Offsetting
+                                            <span>
+                                                <i class="bi bi-dash minimize"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-capitalize">
+                                            Tree planting is the act of planting young trees, shrubs, or other woody
+                                            plants into the ground to establish new forests or enhance existing ones. It
+                                            is
+                                            a crucial component of environmental
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-5">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button
+                                            class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            E-Waste Recycling
+                                            <span>
+                                                <i class="bi bi-plus maximize"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Tree planting is the act of planting young trees, shrubs, or other woody
+                                            plants into the ground to establish new forests or enhance existing ones. It
+                                            is
+                                            a crucial component of environmental
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-5">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button
+                                            class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Water Conservation
+                                            <span>
+                                                <i class="bi bi-plus maximize"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Tree planting is the act of planting young trees, shrubs, or other woody
+                                            plants into the ground to establish new forests or enhance existing ones. It
+                                            is
+                                            a crucial component of environmental
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-5">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button
+                                            class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Community Foresty
+                                            <span>
+                                                <i class="bi bi-plus maximize"></i>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Tree planting is the act of planting young trees, shrubs, or other woody
+                                            plants into the ground to establish new forests or enhance existing ones. It
+                                            is
+                                            a crucial component of environmental
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="image">
+                            <img src="./assets/images/accordion-img.jpg" alt="people-cleaning" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-section-ends -->
+
+        <!-- achievement-section-starts -->
+        <section class="achievement-sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="achievement-item border-end">
+                            <h2 class="text-white py-3 m-0 text-capitalize fs-1 fw-bold">Our trees have been monitored
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="achievement-item text-center border-end">
+                            <img src="./assets/images/achieve1.png" alt="hand+tree" class="p-2">
+                            <h5 class="text-capitalize text-white">trees planted</h5>
+                            <span class="count fw-bold">6,472,068</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="achievement-item text-center border-end">
+                            <img src="./assets/images/achieve2.png" alt="hand" class="p-2">
+                            <h5 class="text-capitalize text-white">Families helped</h5>
+                            <span class="count fw-bold">38,768</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="achievement-item text-center">
+                            <img src="./assets/images/achieve3.png" alt="earth" class="p-2">
+                            <h5 class="text-capitalize text-white">CO2 captured (tonne)</h5>
+                            <span class="count fw-bold">1,193,210</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- achievement-section-ends -->
+
+        <!-- involve-section-starts -->
+        <section class="involve-sect position-relative">
+            <div class="involve-leaf position-absolute d-md-flex d-none">
+                <img src="./assets/images/involve-leaf-1.png" alt="leaf">
+            </div>
+            <div class="involve-leaf-2 position-absolute d-md-flex d-none">
+                <img src="./assets/images/leaf-theme2.png" alt="leaf">
+            </div>
+            <div class="container">
+                <div class="involve-bg">
+                    <div class="involve-team text-center">
+                        <div class="section-sub-title mb-4">
+                            <h5>
+                                <img src="./assets/images/section-title-leaf.svg" alt="">
+                                <span class="text-uppercase fw-semibold">get involved now</span>
+                            </h5>
+                        </div>
+                        <div class="section-title pb-5">
+                            <h2 class="text-capitalize fw-bold fs-1 text-white">We Have The Power Today To
+                                Change Tomorrow</h2>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="involve-btn text-white d-flex align-items-center gap-2">
+                                Join With Us
+                                <i class="fa-solid fa-angles-right d-flex align-items-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- involve-section-ends -->
+
+        <!-- testimonial-section-starts -->
+        <section class="testimony-sect">
+            <div class="container">
                 <div class="section-sub-title mb-4">
                     <h5>
                         <img src="./assets/images/section-title-leaf.svg" alt="">
-                        <span class="text-uppercase fw-semibold">our team members</span>
+                        <span class="text-uppercase fw-semibold">our client’s feedback</span>
                     </h5>
                 </div>
                 <div class="section-title pb-5">
-                    <h2 class="text-capitalize fw-bold fs-1">foresty awesome team</h2>
+                    <h2 class="text-capitalize fw-bold fs-1">foresty loves people</h2>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-3 col-lg-6 col-12">
-                    <div class="team-item p-30 border text-center">
-                        <div class="team-item-img">
-                            <img src="./assets/images/team-1.png" alt="person" class="img-fluid">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item bg-white">
+                                <div
+                                    class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                    <div class="testimonial-head">
+                                        <div class="testimony-info d-flex align-items-center">
+                                            <div class="testimony-img me-3">
+                                                <img src="./assets/images/testimony-img.png" alt="person-img">
+                                            </div>
+                                            <div class="testimony-name">
+                                                <h3 class="fw-semibold">Kenneth S. Fisher</h3>
+                                                <span class="fw-semibold">Marketing Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right fs-1"></i>
+                                </div>
+                                <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                    <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                        porttitor, convallis erat sit amet,
+                                        facilisis velit. Nulla ornare convallis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="mt-4 fs-4 fw-semibold">Dana A. Hutchison</h3>
-                        <span class="fw-semibold">Founder</span>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-12">
-                    <div class="team-item p-30 border text-center">
-                        <div class="team-item-img">
-                            <img src="./assets/images/team-2.png" alt="person" class="img-fluid">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item bg-white">
+                                <div
+                                    class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                    <div class="testimonial-head">
+                                        <div class="testimony-info d-flex align-items-center">
+                                            <div class="testimony-img me-3">
+                                                <img src="./assets/images/testimony-img-2.png" alt="person-img">
+                                            </div>
+                                            <div class="testimony-name">
+                                                <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
+                                                <span class="fw-semibold">Marketing Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right fs-1"></i>
+                                </div>
+                                <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                    <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                        porttitor, convallis erat sit amet,
+                                        facilisis velit. Nulla ornare convallis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="mt-4 fs-4 fw-semibold">Bonnie J. Britt</h3>
-                        <span class="fw-semibold">Forest Officer</span>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-12">
-                    <div class="team-item p-30 border text-center">
-                        <div class="team-item-img">
-                            <img src="./assets/images/team-3.png" alt="person" class="img-fluid">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item bg-white">
+                                <div
+                                    class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                    <div class="testimonial-head">
+                                        <div class="testimony-info d-flex align-items-center">
+                                            <div class="testimony-img me-3">
+                                                <img src="./assets/images/testimony-img.png" alt="person-img">
+                                            </div>
+                                            <div class="testimony-name">
+                                                <h3 class="fw-semibold">Kenneth S. Fisher</h3>
+                                                <span class="fw-semibold">Marketing Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right fs-1"></i>
+                                </div>
+                                <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                    <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                        porttitor, convallis erat sit amet,
+                                        facilisis velit. Nulla ornare convallis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="mt-4 fs-4 fw-semibold">Francis A. Cote</h3>
-                        <span class="fw-semibold">Garden Maker</span>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-12">
-                    <div class="team-item p-30 border text-center">
-                        <div class="team-item-img">
-                            <img src="./assets/images/team-4.png" alt="person" class="img-fluid">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item bg-white">
+                                <div
+                                    class="testimony-head-item d-flex align-items-center justify-content-between border-bottom p-30">
+                                    <div class="testimonial-head">
+                                        <div class="testimony-info d-flex align-items-center">
+                                            <div class="testimony-img me-3">
+                                                <img src="./assets/images/testimony-img-2.png" alt="person-img">
+                                            </div>
+                                            <div class="testimony-name">
+                                                <h3 class="fw-semibold">Jennifer R. Tanaka</h3>
+                                                <span class="fw-semibold">Marketing Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right fs-1"></i>
+                                </div>
+                                <div class="testimony-content p-30 fs-5 fw-medium text-capitalize">
+                                    <p>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio
+                                        porttitor, convallis erat sit amet,
+                                        facilisis velit. Nulla ornare convallis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="mt-4 fs-4 fw-semibold">Mario L. <br> Lawhorn</h3>
-                        <span class="fw-semibold">Co - Founder</span>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- team-members-section-ends -->
+        </section>
+        <!-- testimonial-section-ends -->
 
-    <!-- our-info-section-starts -->
-    <section class="our-info">
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="col-lg-3">
-                    <div class="info-logo">
-                        <img src="./assets/images/logo-light.svg" alt="logo">
+        <!-- team-members-section-starts -->
+        <section class="team-sect pt-5">
+            <div class="container">
+                <div class="text-center">
+                    <div class="section-sub-title mb-4">
+                        <h5>
+                            <img src="./assets/images/section-title-leaf.svg" alt="">
+                            <span class="text-uppercase fw-semibold">our team members</span>
+                        </h5>
+                    </div>
+                    <div class="section-title pb-5">
+                        <h2 class="text-capitalize fw-bold fs-1">foresty awesome team</h2>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="info-ip position-relative">
-                        <input type="text" placeholder="Your Email Address" class="ip-tag border-0">
-                        <i class="fa-regular fa-envelope mail position-absolute fs-3"></i>
-                        <i class="fa-solid fa-paper-plane msg-send fs-4 position-absolute"></i>
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="team-item p-30 border text-center">
+                            <div class="team-item-img">
+                                <img src="./assets/images/team-1.png" alt="person" class="img-fluid">
+                            </div>
+                            <h3 class="mt-4 fs-4 fw-semibold">Dana A. Hutchison</h3>
+                            <span class="fw-semibold">Founder</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="info-social ps-5 d-flex align-items-center gap-3">
-                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle ">
-                            <i class="fa-brands fa-facebook-f fs-4"></i>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="team-item p-30 border text-center">
+                            <div class="team-item-img">
+                                <img src="./assets/images/team-2.png" alt="person" class="img-fluid">
+                            </div>
+                            <h3 class="mt-4 fs-4 fw-semibold">Bonnie J. Britt</h3>
+                            <span class="fw-semibold">Forest Officer</span>
                         </div>
-                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="fa-brands fa-twitter fs-4"></i>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="team-item p-30 border text-center">
+                            <div class="team-item-img">
+                                <img src="./assets/images/team-3.png" alt="person" class="img-fluid">
+                            </div>
+                            <h3 class="mt-4 fs-4 fw-semibold">Francis A. Cote</h3>
+                            <span class="fw-semibold">Garden Maker</span>
                         </div>
-                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="fa-brands fa-linkedin-in fs-4"></i>
-                        </div>
-                        <div class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
-                            <i class="fa-brands fa-youtube fs-4"></i>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="team-item p-30 border text-center">
+                            <div class="team-item-img">
+                                <img src="./assets/images/team-4.png" alt="person" class="img-fluid">
+                            </div>
+                            <h3 class="mt-4 fs-4 fw-semibold">Mario L. <br> Lawhorn</h3>
+                            <span class="fw-semibold">Co - Founder</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- our-info-section-ends -->
+        </section>
+        <!-- team-members-section-ends -->
 
+        <!-- our-info-section-starts -->
+        <section class="our-info">
+            <div class="container">
+                <div class="row g-4 align-items-center ">
+                    <div class="col-lg-3 col-12">
+                        <div class="info-logo text-center">
+                            <img src="./assets/images/logo-light.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="info-ip position-relative">
+                            <input type="text" placeholder="Your Email Address" class="ip-tag border-0">
+                            <i class="fa-regular fa-envelope mail position-absolute fs-3"></i>
+                            <i class="fa-solid fa-paper-plane msg-send fs-4 position-absolute"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-social ps-5 d-flex align-items-center gap-3 justify-content-center">
+                            <div
+                                class="info-social-logo d-flex align-items-center justify-content-center rounded-circle ">
+                                <i class="fa-brands fa-facebook-f fs-4"></i>
+                            </div>
+                            <div
+                                class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                                <i class="fa-brands fa-twitter fs-4"></i>
+                            </div>
+                            <div
+                                class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                                <i class="fa-brands fa-linkedin-in fs-4"></i>
+                            </div>
+                            <div
+                                class="info-social-logo d-flex align-items-center justify-content-center rounded-circle">
+                                <i class="fa-brands fa-youtube fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our-info-section-ends -->
+    </main>
+    
     <!-- footer-section-starts -->
     <footer class="footer-sect">
         <div class="container">
@@ -872,23 +907,24 @@
                                 <h4 class="fw-semibold">About Foresty</h4>
                                 <span class="footer-line d-flex"></span>
                             </div>
-                            <p class="mt-5 mt-sm-4 mb-4 text-capitalize">Tree planting is the act of planting young trees, shrubs, or other woody plants into the ground to establish new</p>
-                            <div class="d-flex align-items-center justify-self-center">
+                            <p class="mt-5 mt-sm-4 mb-4 text-capitalize">Tree planting is the act of planting young
+                                trees, shrubs, or other woody plants into the ground to establish new</p>
+                            <div class="d-flex">
                                 <h5 class="fw-bold me-2">View Map</h5>
-                                <i class="fa-solid fa-location-arrow"></i>
-                            </div>                            
+                                <i class="fa-solid fa-location-arrow foot-icon"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
-                            <div class="footer-title">
+                            <div class="footer-title mt-4 mt-md-0">
                                 <h4 class="fw-semibold">Get In Touch!</h4>
                                 <span class="footer-line d-flex"></span>
                             </div>
-                            <ul class="mt-5 m-0 p-0 mt-sm-4">
+                            <ul class="mt-5 m-0 p-0 my-sm-4">
                                 <li class="pb-3">
                                     <div>
-                                        <i class="fa-solid fa-location-dot primary-color pe-2"></i>
+                                        <i class="fa-solid fa-location-dot pe-2 foot-icon"></i>
                                         <span>
                                             901 N Pitt Str., Suite 170
                                             Alexandria, <br>
@@ -898,17 +934,17 @@
                                 </li>
                                 <li class="pb-3">
                                     <div class="call-icon">
-                                        <i class="fa-solid fa-phone-volume primary-color pe-2"></i>
-                                        <span>                                            
-                                        (406) 555-0120                                    
+                                        <i class="fa-solid fa-phone-volume pe-2 foot-icon"></i>
+                                        <span>
+                                            (406) 555-0120
                                         </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <i class="fa-solid fa-envelope primary-color pe-2"></i>
-                                        <span>                                        
-                                            info@extrem.com                                    
+                                        <i class="fa-solid fa-envelope pe-2 foot-icon"></i>
+                                        <span>
+                                            info@extrem.com
                                         </span>
                                     </div>
                                 </li>
@@ -917,53 +953,53 @@
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-item">
-                            <div class="footer-title">
+                            <div class="footer-title mt-4 mt-md-0">
                                 <h4 class="fw-semibold">Quick Link</h4>
                                 <span class="footer-line d-flex"></span>
                             </div>
-                            <ul class="mt-5 p-0">
+                            <ul class="mt-3 p-0">
                                 <li class="pb-2">
-                                    <i class="fa-solid fa-chevron-right pe-1 primary-color"></i>
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
                                     <span> Water Conservation</span>
                                 </li>
                                 <li class="pb-2">
-                                    <i class="fa-solid fa-chevron-right pe-1 primary-color"></i>
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
                                     <span> Eco System</span>
                                 </li>
                                 <li class="pb-2">
-                                    <i class="fa-solid fa-chevron-right pe-1 primary-color"></i>
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
                                     <span> Plastic Recycleing</span>
                                 </li>
                                 <li class="pb-2">
-                                    <i class="fa-solid fa-chevron-right pe-1 primary-color"></i>
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
                                     <span> Urban planning</span>
                                 </li>
                                 <li class="pb-2">
-                                    <i class="fa-solid fa-chevron-right pe-1 primary-color"></i>
+                                    <i class="fa-solid fa-chevron-right pe-1 foot-icon"></i>
                                     <span> Save Green House</span>
                                 </li>
                             </ul>
-                        </div> 
+                        </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="footer-item">
-                            <div class="footer-title">
+                        <div class="footer-item mt-4 mt-md-0">
+                            <div class="footer-title ">
                                 <h4 class="fw-semibold">Recent News</h4>
                                 <span class="footer-line d-flex"></span>
                             </div>
-                            <ul class="mt-5 p-0 mt-sm-5">
+                            <ul class="mt-3 p-0">
                                 <li class="d-flex pb-3">
                                     <img src="./assets/images/footer-1.png" alt="img">
                                     <div class="ms-2">
                                         <h4 class="fs-5 fw-semibold">Close up picture of the sapling</h4>
-                                        <span class="fw-medium">2 weeks ago</span>
+                                        <span class="fw-medium time">2 weeks ago</span>
                                     </div>
                                 </li>
                                 <li class="d-flex">
                                     <img src="./assets/images/footer-2.png" alt="img">
                                     <div class="ms-2">
                                         <h4 class="fs-5 fw-semibold">Close up picture of the sapling</h4>
-                                        <span class="fw-medium">2 weeks ago</span>
+                                        <span class="fw-medium time">2 weeks ago</span>
                                     </div>
                                 </li>
                             </ul>
@@ -975,11 +1011,15 @@
     </footer>
     <!-- footer-section-ends -->
 
-
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/videolightbox.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
+        $(window).on('load', function () {
+            $(".preloader").delay(1000).fadeOut();
+        })
         $(".accordion-header").on('click', function () {
             $(this).find(".maximize").toggleClass("bi-plus bi-dash")
         })
@@ -995,18 +1035,41 @@
                 delay: 2500,
                 disableOnInteraction: false,
             },
-            // breakpoints: {
-            //     768: {
-            //         slidesPerView: 1,
-            //         spaceBetween: 10,
-            //     },
-            // },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+            },
         });
         $(".bi-list").on('click', function () {
             $(".responsive-head").fadeToggle()
         })
         $(".bi-list").on('click', function () {
             $(this).toggleClass("bi-x bi-list")
+        })
+        $(document).ready(function () {
+            // When the button is clicked make the lightbox fade in in the span of 1 second, hide itself and start the video
+            $("#button").on("click", function () {
+                $("#lightbox").fadeIn(1000);
+                $(this).hide();
+                var videoURL = $('#video').prop('src');
+                videoURL += "?autoplay=1";
+                $('#video').prop('src', videoURL);
+            });
+
+            // When the close button is clicked make the lightbox fade out in the span of 0.5 seconds and show the play button
+            $("#close-btn").on("click", function () {
+                $("#lightbox").fadeOut(500);
+                $("#button").show(250);
+            });
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
 </body>

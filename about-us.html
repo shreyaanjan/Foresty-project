@@ -221,16 +221,16 @@
                             suitability of tree species to the local ecosystem
                         </p>
                         <div class="mb-5">
-                            <ul class="p-0 d-flex align-items-center">
-                                <li class="fw-semibold me-5">
+                            <ul class="p-0 d-flex flex-wrap align-items-center ">
+                                <li class="fw-semibold me-5 mb-3">
                                     <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
                                     Mentoring
                                 </li>
-                                <li class="fw-semibold me-5">
+                                <li class="fw-semibold me-5 mb-3">
                                     <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
                                     Donating
                                 </li>
-                                <li class="fw-semibold me-5">
+                                <li class="fw-semibold me-5 mb-3">
                                     <img src="./assets/images/leaf.svg" alt="icon" class="pe-2">
                                     Volunteering
                                 </li>
@@ -289,8 +289,8 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button d-flex justify-content-between fs-4 fw-medium"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">                                        
-                                        Awareness Creation                                        
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Awareness Creation
                                         <span>
                                             <i class="bi bi-dash minimize "></i>
                                         </span>
@@ -310,8 +310,8 @@
                                     <button
                                         class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">                                        
-                                        Cleaning Environment                                        
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Cleaning Environment
                                         <span>
                                             <i class="bi bi-plus maximize "></i>
                                         </span>
@@ -331,8 +331,8 @@
                                     <button
                                         class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">                                        
-                                        Environmental Education                                        
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Environmental Education
                                         <span>
                                             <i class="bi bi-plus maximize "></i>
                                         </span>
@@ -352,8 +352,8 @@
                                     <button
                                         class="accordion-button d-flex justify-content-between fs-4 fw-medium  collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">                                        
-                                        Eco Development                                        
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        Eco Development
                                         <span>
                                             <i class="bi bi-plus maximize "></i>
                                         </span>
@@ -553,11 +553,12 @@
                                 <h4 class="fw-semibold">About Foresty</h4>
                                 <span class="footer-line d-flex"></span>
                             </div>
-                            <p class="mt-5 mt-sm-4 mb-4 text-capitalize">Tree planting is the act of planting young trees, shrubs, or other woody plants into the ground to establish new</p>
+                            <p class="mt-5 mt-sm-4 mb-4 text-capitalize">Tree planting is the act of planting young
+                                trees, shrubs, or other woody plants into the ground to establish new</p>
                             <div class="d-flex">
                                 <h5 class="fw-bold me-2">View Map</h5>
                                 <i class="fa-solid fa-location-arrow foot-icon"></i>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
@@ -580,16 +581,16 @@
                                 <li class="pb-3">
                                     <div class="call-icon">
                                         <i class="fa-solid fa-phone-volume pe-2 foot-icon"></i>
-                                        <span>                                            
-                                        (406) 555-0120                                    
+                                        <span>
+                                            (406) 555-0120
                                         </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <i class="fa-solid fa-envelope pe-2 foot-icon"></i>
-                                        <span>                                        
-                                            info@extrem.com                                    
+                                        <span>
+                                            info@extrem.com
                                         </span>
                                     </div>
                                 </li>
@@ -624,7 +625,7 @@
                                     <span> Save Green House</span>
                                 </li>
                             </ul>
-                        </div> 
+                        </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-item mt-4 mt-md-0">
@@ -660,7 +661,7 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
-        $(window).on('load', function (){
+        $(window).on('load', function () {
             $(".preloader").delay(1000).fadeOut();
         })
         $(".accordion-header").on('click', function () {
@@ -677,6 +678,16 @@
                 autoplay: true,
                 delay: 2500,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
             },
         });
         $(".bi-list").on('click', function () {

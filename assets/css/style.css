@@ -144,6 +144,10 @@ main{
     transition: 0.5s all ease-in-out;
 }
 
+.banner-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
 
 .banner-desc {
     font-family: var(--inter-font);
@@ -435,6 +439,13 @@ p {
     border-radius: 6px;
     font-family: var(--inter-font);
     border: 3px solid white;
+    transition: 0.5s all ease-in-out;
+}
+
+.involve-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid var(--primary-color);
 }
 
 .involve-bg::before {
@@ -445,7 +456,6 @@ p {
     z-index: -1;
     top: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.72) 100%);
-
 }
 
 /* testimonial-section */
@@ -585,7 +595,15 @@ p {
 .con-btn{
     padding: 12px 26px;
     background-color: var(--primary-color);
+    color: white;
     border: none;
+    transition: 0.5s all ease-in-out;
+}
+
+.con-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 .map iframe{
